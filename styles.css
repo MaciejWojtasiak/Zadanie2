@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    margin: 20px auto;
+    width: 160px;
+    height: 600px;
+    border: 1px solid gray;
+}
+
+.slider {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.slide {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0 5px;
+    flex-shrink: 0;
+    border: 1px solid gray;
+}
+
+.product_img {
+    max-width: 100%;
+}
+
+.first {
+    min-height: 250px;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    height: 100%;
+}
+
+.name {
+    font-size: 1.1rem;
+}
+
+.price {
+    font-size: 1.3rem;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.controlButtons button {
+    position: absolute;
+    top: 40%;
+    background-color: transparent;
+    font-size: 2.3rem;
+    color: gray;
+    transition: .4s ease-in;
+}
+
+.controlButtons button:hover {
+    color: black;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.closeBtn {
+    display: block;
+    margin-left: auto;
+    background-color: white;
+}
+
+.closeBtn:after {
+    font-size: 1.3rem;
+    color: gray;
+    content: "\00d7";
+}
+
+.checkBtn {
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100%;
+    height: 15%;
+}
+
+.logo img {
+    width: 90%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 10px;
+    height: 7px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
